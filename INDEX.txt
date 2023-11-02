@@ -1,0 +1,24 @@
+HTTP/1.1 vs HTTP/2: What's the Difference?
+
+      HTTP, in full Hyper Text Transfer Protocol, standard application-level protocol used for exchanging files on 
+    the World Wide Web since its invention in 1989.
+
+      HTTP/1.1 in 1997 until recently, there have been few revisions to the protocol. But in 2015,
+    a reimagined version called HTTP/2 came into use, which offered several methods to decrease latency,
+    especially when dealing with mobile platforms and server-intensive graphics and videos.
+
+      HTTP/2 has since become increasingly popular, with some estimates suggesting that around a third of 
+    all websites in the world support it.
+    In this changing landscape, web developers can benefit from understanding the technical differences 
+    between HTTP/1.1 and HTTP/2, allowing them to make informed and efficient decisions about evolving best practices.
+    
+HTTP/1.1 — Pipelining and Head-of-Line Blocking
+
+•	HTTP is a top-level application protocol that exchanges information between a client computer and a local or remote web server.
+•	The first response that a client receives on an HTTP request is often not the fully rendered page. Instead, it contains links to additional resources needed by the requested page.
+•	The client discovers that the full rendering of the page requires these additional resources from the server only after it downloads the page.
+
+HTTP/2 — Advantages of the Binary Framing Layer
+•	In HTTP/2, the binary framing layer encodes requests/responses and cuts them up into smaller packets of information, greatly increasing the flexibility of data transfer.
+•	HTTP/2 began as the SPDY protocol, developed primarily at Google with the intention of reducing web page load latency by using techniques such as compression, multiplexing, and prioritization.
+•	Let’s take a closer look at how this works. As opposed to HTTP/1.1, which must make use of multiple TCP connections to lessen the effect of HOL blocking, HTTP/2 establishes a single connection object between the two machines.
