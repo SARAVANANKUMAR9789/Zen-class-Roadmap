@@ -1,0 +1,47 @@
+For the give JSON iterate over all for loopa(for,for in,for of,forEach)
+
+we have the following JSON object:
+const myJSON = {
+  "name": "SARAVAVAKUMAR",
+  "age": 23,
+  "city": "SALEM",
+  "email": "SSK.SARAVANANKUMAR@GMAIL.com"
+};
+
+Using for...in loop:
+
+for (let key in myJSON) {
+  console.log(key + ": " + myJSON[key]);
+}
+
+Using for...of loop
+
+for (let [key, value] of Object.entries(myJSON)) {
+  console.log(key + ": " + value);
+}
+
+forEach loop:
+
+Object.keys(myJSON).forEach(key => {
+  console.log(key + ": " + myJSON[key]);
+});
+
+forEach loop:
+
+Object.values(myJSON).forEach(value => {
+  console.log(value);
+});
+
+
+OUTPUT:
+
+name: SARAVAVAKUMAR
+age: 23
+city: SALEM
+email: SSK.SARAVANANKUMAR@GMAIL.com
+
+Read about the difference between window,screen,and document in javascript:
+
+-window is the top-level object representing the browser window and encompasses everything related to the browsing context.
+-document represents the HTML content of the page and provides methods to interact with it.
+-screen provides information about the user's screen or display device.
