@@ -1,0 +1,88 @@
+.outerline {
+    border-style: double;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.event {
+    text-align: center;
+    font-size: 35px;
+}
+
+.pad {
+    padding: 0px 15px 15px 15px;
+}
+
+.available {
+    text-align: center;
+    font-size: 25px;
+}
+
+.inerline {
+    border-style: solid;
+    display: flex;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+}
+
+.img {
+    width: 30%;
+    padding: 5px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.con {
+    width: 70%;
+}
+
+.ima-si {
+    width: 200px;
+    height: auto;
+}
+
+label {
+    display: inline-block;
+    width: 30%;
+    text-align: right;
+}
+
+.con input {
+    width: 60%;
+}
+
+con-con {
+    width: 50%;
+    height: auto;
+}
+.submit-button {
+    display: flex;
+    color: rgb(19, 18, 18);
+    padding: 5px 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    width: 70px;
+
+  }
+  
+.cantal-button {
+    display: flex;
+    color: rgb(19, 18, 18);
+    padding: 5px 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    width: 70px;
+  } 
+
+.button{
+    text-align: center;
+    padding: 5px 15px;
+}
