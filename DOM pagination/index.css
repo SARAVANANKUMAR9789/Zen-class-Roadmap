@@ -1,0 +1,23 @@
+#pagination {
+    margin-top: 20px;
+  }
+  
+  .pagination-link {
+    display: inline-block;
+    /* margin-right: 5px; */
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    color: #016e8a;
+    cursor: pointer;
+  }
+  .pagination-link:hover
+  {
+    background-color: #efefef;
+  }
+  
+  .pagination-link.active {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
