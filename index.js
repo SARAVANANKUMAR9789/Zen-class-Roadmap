@@ -545,6 +545,7 @@ function createPaginationLinks() {
       const links = document.querySelectorAll('.pagination-link');
       links.forEach(link => link.classList.remove('active'));
       event.target.classList.add('active');
+      updatePaginationButtons()
     });
     pagination.insertBefore(link, nextBtn);
   }
