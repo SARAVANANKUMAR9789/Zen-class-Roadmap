@@ -9,7 +9,7 @@ import Footer from './com/Footer';
 
 function App() {
   return <>
-    <div style={{backgroundImage: `url("../../src/assets/bg-masthead.jpg")`}}>
+    <div style={{backgroundImage: `url("../assets/bg-masthead.jpg")`}}>
     <NavBar/>
     <Header/> 
     <IconsGrid/>
