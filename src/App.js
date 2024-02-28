@@ -11,19 +11,16 @@ function App() {
       name:'Office Task-1',
       Description:'This is the description for My Fist Task',
       Status:'Not Completed',
-      isStatus:true,
     },
     {
       name:'Office Task-2',
       Description:'This is the description for My Second Task',
       Status:'Not Completed',
-      isStatus:true,
     },
     {
       name:'Office Task-3',
       Description:'This is the description for My Third Task',
       Status:'Not Completed',
-      isStatus:true,
     }
   ])
   return <>
