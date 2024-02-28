@@ -1,7 +1,7 @@
 import Dashboard from "./com/Dashboard";
 import AddUser from "./com/AddUser";
 import Sidebar from "./com/Sidebar";
-import {BrowserRouter,Routes,Route, Navigate, useLocation} from 'react-router-dom'
+import {BrowserRouter,Routes,Route, Navigate} from 'react-router-dom'
 import EditUser from "./com/EditUser";
 import { useState } from "react";
 
