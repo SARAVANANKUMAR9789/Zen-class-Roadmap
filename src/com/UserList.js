@@ -6,25 +6,27 @@ import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import TextField from '@mui/material/TextField';
+import { Box } from '@mui/material';
 
 function UserList({users = [],setUsers = ()=> {}}) {
 
   useEffect(() => {
-    fetchUsers();
-  }, []);
-
-  const fetchUsers = async () => {
-    try {
-      const response = await fetch(API_URL);
-      if (!response.ok) {
-        throw new Error('Failed to fetch users');
+    const fetchUsers = async () => {
+      try {
+        const response = await fetch(API_URL);
+        if (!response.ok) {
+          throw new Error('Failed to fetch users');
+        }
+        const data = await response.json();
+        setUsers(data); 
+      } catch (error) {
+        console.error('Error fetching users:', error);
       }
-      const data = await response.json();
-      setUsers(data); 
-    } catch (error) {
-      console.error('Error fetching users:', error);
-    }
-  };
+    };
+    fetchUsers();
+  }, [setUsers]);
+
+  
 
   const deleteUser = async (id) => {
     try {
@@ -84,7 +86,8 @@ function UserItem({ user, onDelete, onEdit }) {
   };
 
   return (
-      <Card sx={{ minWidth: 275 }}>
+      <Box sx={{ minWidth: 275 }}>
+        <Card variant="outlined">
         {isEditing ? (
           <div>
             <TextField size="small" id="outlined-basic" label="Name" variant="outlined" type="text" name="name" value={formData.name} onChange={handleInputChange} />
@@ -105,7 +108,8 @@ function UserItem({ user, onDelete, onEdit }) {
             </CardActions>
           </div>
         )}
-      </Card>
+        </Card>   
+      </Box>
   );
 }
 
