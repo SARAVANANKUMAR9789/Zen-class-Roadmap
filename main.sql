@@ -57,6 +57,9 @@ CREATE TABLE Submissions (
     FOREIGN KEY (Assignment_ID) REFERENCES Assignments(Assignment_ID),
     FOREIGN KEY (Student_ID) REFERENCES Students(Student_ID)
 );
+
+    <-----------------> er diagram <----------------->
+
 +-------------+        +-------------+        +-------------+
 |  Students   |        |   Courses   |        | Instructors |
 +-------------+        +-------------+        +-------------+
@@ -65,7 +68,7 @@ CREATE TABLE Submissions (
 | Email       |        | Description |        | Email       |
 | Phone       |        | Instructor_ID|---|<--| Phone       |
 | Date_of_Birth|       +-------------+        | Expertise   |
-| Gender      |                              +-------------+
+| Gender      |                               +-------------+
 | Address     |
 +-------------+
 
